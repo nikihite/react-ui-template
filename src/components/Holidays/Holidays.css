@@ -1,20 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&display=swap');
-img {
-    width: 100%;
+
+body{
+  background-color: black;
+  color: white  ;
+}
+
+section {
+  display: flex;
+  justify-content: center;
 }
 
 h2{
     font-family: 'Nabla', cursive;
     text-align: center;
     font-size: 40px;
-    background-color: rgba(207, 25, 207, 0.729);
 }
 
 h3{
     font-family: 'Bungee Spice', cursive;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     background-color: black;
+}
+
+h4{
+    font-family: 'Bungee Spice', cursive;
+    text-align: center;
+    font-size: 40px;
 }
 
 nav{

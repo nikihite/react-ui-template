@@ -1,5 +1,9 @@
 export default function Witches() {
   return (
-    <div>Witches</div>
+    <div>
+      <section>
+        <img src="/uglyWitch.png"/>
+      </section>
+    </div>
   );
 }

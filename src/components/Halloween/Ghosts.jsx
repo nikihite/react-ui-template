@@ -1,5 +1,10 @@
 export default function Ghosts() {
   return (
-    <div>Ghosts</div>
+    <div>
+      <h4>BOOO!</h4>
+      <section>
+        <img height="500px" src="/cuteGhost.png"/>
+      </section>
+    </div>
   );
 }

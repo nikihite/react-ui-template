@@ -1,5 +1,4 @@
 import Navigation from './Navigation.jsx';
-// import Holidays from '../Holidays/Holidays';
 import styles from './Header.css';
 // import SlideoutMenu from './SlideoutMenu.jsx';
 

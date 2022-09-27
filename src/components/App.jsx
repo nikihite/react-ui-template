@@ -4,12 +4,15 @@ import {
   Route,
   Navigate,
 } from 'react-router-dom';
+import Holidays from './Holidays/Holidays';
+import Layout from './Page/Layout';
 
 export default function App() {
   return (
-    'I am App.jsx'
+    <Router>
+      <Route element={<Layout />}/>
+      <Routes>
+        <Route index element={<Holidays />}/>
+      </Routes>
+    </Router>
   );}
-
-
-
-

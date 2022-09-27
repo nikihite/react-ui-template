@@ -11,6 +11,8 @@ import Ghosts from './Halloween/Ghosts';
 import Witches from './Halloween/Witches';
 import Vampires from './Halloween/Vampires';
 import FourthJuly from './FourthJuly/FourthJuly';
+import Christmas from './Christmas/Christmas';
+import Easter from './Easter/Easter';
 
 export default function App() {
   return (
@@ -24,6 +26,8 @@ export default function App() {
             <Route path="witches"element={<Witches />}/>
           </Route>
           <Route path="fourthjuly" element={<FourthJuly />}/>
+          <Route path="christmas" element={<Christmas />}/>
+          <Route path="easter" element={<Easter />}/>
         </Route>
 
         <Route path="*" element={<Navigate to="/" replace />}/>

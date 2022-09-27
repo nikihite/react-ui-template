@@ -4,9 +4,9 @@ import styles from './Navigation.css';
 export default function Navigation() {
   return (
     <nav className={styles.Navigation}>
-      <NavLink to="">Home</NavLink>
-      <NavLink to="Halloween">Halloween</NavLink>
-      <NavLink to="FourthJuly">Fourth of July</NavLink>
+      <NavLink to="">Home Page</NavLink>
+      <NavLink to="Halloween">Halloween Page</NavLink>
+      <NavLink to="FourthJuly">Fourth of July Page</NavLink>
     </nav>
   );
 }

@@ -6,13 +6,27 @@ import {
 } from 'react-router-dom';
 import Holidays from './Holidays/Holidays';
 import Layout from './Page/Layout';
+import Halloween from './Halloween/Halloween';
+import Ghosts from './Halloween/Ghosts';
+import Witches from './Halloween/Witches';
+import Vampires from './Halloween/Vampires';
+import FourthJuly from './FourthJuly/FourthJuly';
 
 export default function App() {
   return (
     <Router>
-      <Route element={<Layout />}/>
       <Routes>
-        <Route index element={<Holidays />}/>
+        <Route element={<Layout />}>
+          <Route index element={<Holidays />}/>
+          <Route path="halloween" element={<Halloween />}>
+            <Route index element={<Ghosts />}/>
+            <Route path="vampires"element={<Vampires />}/>
+            <Route path="witches"element={<Witches />}/>
+          </Route>
+          <Route path="fourthjuly" element={<FourthJuly />}/>
+        </Route>
+
+        <Route path="*" element={<Navigate to="/" replace />}/>
       </Routes>
     </Router>
   );}

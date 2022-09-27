@@ -1,5 +1,5 @@
 import Navigation from './Navigation.jsx';
-import Holidays from '../Holidays/Holidays';
+// import Holidays from '../Holidays/Holidays';
 import styles from './Header.css';
 // import SlideoutMenu from './SlideoutMenu.jsx';
 
@@ -10,7 +10,7 @@ export default function Header() {
         {/* <SlideoutMenu /> */}
       </div>
 
-      <h1>HAPPY HOLIDAYS</h1>
+      <h1>HAPPY HOLIDAYS MOTHERFUCKERS</h1>
 
       <div className={styles.NavigationContainer}>
         <Navigation />

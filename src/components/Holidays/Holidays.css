@@ -9,3 +9,28 @@ h2{
     font-size: 40px;
     background-color: rgba(207, 25, 207, 0.729);
 }
+
+h3{
+    font-family: 'Bungee Spice', cursive;
+    text-align: center;
+    font-size: 40px;
+    background-color: black;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  
+    @media (min-width: 700px) {
+      flex-direction: row;
+    }
+  
+    a {
+      padding: 3px 7px;
+      color: var(--white-color);
+      text-decoration: none;
+      padding: 0;
+    }
+  }

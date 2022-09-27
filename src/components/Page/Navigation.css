@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Nabla&family=Rubik+Iso&display=swap');
+
 .Navigation {
     display: flex;
     gap: 20px;
@@ -14,4 +16,10 @@
       text-decoration: none;
       padding: 0;
     }
+  }
+
+  nav {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    color: rgba(24, 24, 63, 0.841);
   }

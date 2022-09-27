@@ -3,7 +3,7 @@ import { Link, Outlet } from 'react-router-dom';
 export default function Halloween() {
   return (
     <div>
-      <h1>HALLOWEEN PAGE</h1>
+      <h3>HALLOWEEN PAGE</h3>
       <nav>
         <Link to="">Ghosts</Link>
         <Link to="vampires">Vampires</Link>

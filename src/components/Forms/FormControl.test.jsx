@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { InputControl, SelectControl,
-  TextAreaControl } from './FormControl.jsx';
+  TextAreaControl, CheckBox } from './FormControl.jsx';
 
 test('input control should work', async () => {
   render(
@@ -45,4 +45,18 @@ test('text area control should render', async () => {
   expect(textControl.placeholder)
     .toEqual('why do you love the color(s) (optional)');
   expect(textControl.required).toEqual(true);
+});
+
+test('checkbox should render', async () => {
+  render(<CheckBox
+    required
+    legend="submit?"
+    label="yessir"
+    name="Submit"/>);
+    
+  const legend = screen.getByText('submit?');
+  expect(legend).not.toBeNull();
+  const checkBox = screen.getByLabelText('yessir');
+  expect(checkBox.name).toEqual('Submit');
+  expect(checkBox.required).toEqual(true);
 });

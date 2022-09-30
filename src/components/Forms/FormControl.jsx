@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import classnames from 'classnames';
 import style from './FormControl.css';
 

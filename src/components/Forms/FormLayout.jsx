@@ -1,6 +1,6 @@
 import styles from './FormLayout.css';
 import { InputControl, SelectControl, 
-  TextAreaControl, CheckBox } from './FormControl.jsx';
+  TextAreaControl, CheckBox, FormButton } from './FormControl.jsx';
 
 export default function Form() {
   return (
@@ -24,6 +24,8 @@ export default function Form() {
             placeholder="why do you love the color(s) (optional)"/>
 
           <CheckBox legend="submit?" label="yessir"/>
+
+          <FormButton text="Submit"/>
         </form>
       </div>
     </div>

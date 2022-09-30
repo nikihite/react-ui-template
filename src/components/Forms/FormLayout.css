@@ -21,7 +21,7 @@ form {
 label {
     display: flex;
     flex-direction: row;
-    color: rgb(143, 212, 212);
+    color: rgb(255, 0, 221);
 }
 
 input {

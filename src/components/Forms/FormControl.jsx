@@ -46,3 +46,6 @@ export function CheckBox({ legend, label, ...rest }) {
     </fieldset>
   );
 }
+export function FormButton({ text }) {
+  return <button className={style.FormButton}>{text}</button>;
+}

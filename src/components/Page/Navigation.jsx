@@ -9,6 +9,7 @@ export default function Navigation() {
       <NavLink to="FourthJuly">Fourth of July Page</NavLink>
       <NavLink to="Christmas">Christmas Page</NavLink>
       <NavLink to="Easter">Easter Page</NavLink>
+      <NavLink to="form">Form</NavLink>
     </nav>
   );
 }

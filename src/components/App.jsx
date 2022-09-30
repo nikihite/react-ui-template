@@ -13,6 +13,7 @@ import Vampires from './Halloween/Vampires';
 import FourthJuly from './FourthJuly/FourthJuly';
 import Christmas from './Christmas/Christmas';
 import Easter from './Easter/Easter';
+import Form from './Forms/FormLayout.jsx';
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
             <Route path="vampires"element={<Vampires />}/>
             <Route path="witches"element={<Witches />}/>
           </Route>
+          <Route path="form" element={<Form />} />
           <Route path="fourthjuly" element={<FourthJuly />}/>
           <Route path="christmas" element={<Christmas />}/>
           <Route path="easter" element={<Easter />}/>

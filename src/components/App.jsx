@@ -14,6 +14,7 @@ import FourthJuly from './FourthJuly/FourthJuly';
 import Christmas from './Christmas/Christmas';
 import Easter from './Easter/Easter';
 import Form from './Forms/FormLayout.jsx';
+import Search from './Search/Search';
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Holidays />}/>
+          <Route path="search" element={<Search />} />
           <Route path="halloween" element={<Halloween />}>
             <Route index element={<Ghosts />}/>
             <Route path="vampires"element={<Vampires />}/>

@@ -1,50 +1,28 @@
 /* eslint-disable react/prop-types */
-import styles from './FormControl.css';
+
 import classnames from 'classnames';
+import style from './FormControl.css';
 
-function FormControl({ label, required, children }) {
-  const className = classnames(styles.FormControl, styles.LabelText);
-  return (
-    <label className={className}>
-      <LabelText text={label} required={required} />
-      {children}
-    </label>
-  );
+function FormControl({ label, children }) {
+  const className = classnames(style.FormControl, style.LabelText);
+  return (<label className={className}>
+    {label}
+    {children}
+  </label>);
 }
 
-export function LabelText({ text, required }) {
-  const className = classnames(styles.LabelText, {
-    [styles.Required]: required,
-  });
-  return <span className={className}>{text}</span>;
-}
-
-export function InputControl({ label, required, ...rest }) {
+export function InputControl({ label, ...rest }) {
   return (
-    <FormControl label={label} required={required}>
-      <input {...rest} required={required} />
+    <FormControl label={label}>
+      <input {...rest} />
     </FormControl>
   );
 }
 
-export function TextAreaControl({ label, required, ...rest }) {
+export function SelectControl({ label, children, placeholder, ...rest }) {
   return (
-    <FormControl label={label} required={required}>
-      <textarea {...rest} required={required} />
-    </FormControl>
-  );
-}
-
-export function SelectControl({
-  label,
-  required,
-  children,
-  placeholder,
-  ...rest
-}) {
-  return (
-    <FormControl label={label} required={required}>
-      <select {...rest} required={required}>
+    <FormControl label={label}>
+      <select {...rest}>
         {placeholder && <option disabled>{placeholder}</option>}
         {children}
       </select>
@@ -52,29 +30,26 @@ export function SelectControl({
   );
 }
 
-export function CheckboxControl({
-  legend,
-  required,
-  label,
-  ...rest
-}) {
+export function TextAreaControl({ label, ...rest }) {
   return (
-    <fieldset className={styles.CheckboxControl}>
-      <legend>
-        <LabelText text={legend} required={required} />
-      </legend>
+    <FormControl label={label}>
+      <textarea {...rest}/>
+    </FormControl>
+  );
+}
+
+export function Checkbox({ legend, label, ...rest }) {
+  return (
+    <fieldset className={style.CheckboxControl}>
+      <legend className={style.LabelText}>{legend}</legend>
       <label>
-        <input type="checkbox" {...rest} required={required} />
+        <input type="checkbox" {...rest} />
         {label}
       </label>
     </fieldset>
   );
 }
 
-export function FormButton({ children, ...rest }) {
-  return (
-    <button className={styles.FormButton} {...rest}>
-      {children}
-    </button>
-  );
+export function FormButton({ children }) {
+  return <button className={style.FormButton}>{children}</button>;
 }

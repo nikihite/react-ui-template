@@ -6,6 +6,7 @@
     padding: 15px;
     border-radius: 50px;
     border: 5px ridge rgb(245, 153, 245);
+    height: 60px;
 }
 form {
     display: flex;
@@ -28,3 +29,6 @@ input {
     border-radius: 50px;
 }
 
+button {
+    height: 60px;
+}

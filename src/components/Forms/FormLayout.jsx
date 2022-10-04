@@ -23,7 +23,7 @@ export default function Form() {
           <TextAreaControl  label="color bio" name="bio"
             placeholder="why do you love the color(s) (optional)"/>
 
-          <Checkbox legend="submit?" label="yessir"/>
+          <Checkbox legend="submit?" label="yessir" />
 
           <FormButton text="Submit"/>
         </form>

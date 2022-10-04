@@ -62,7 +62,7 @@ test('checkbox should render', async () => {
 });
 
 test('button should render, preferably for submission', async () => {
-  render(<FormButton text="Submit" />);
+  render(<FormButton type="submit">Submit</FormButton>);
     
   const button = screen.getByRole('button');
   expect(button.textContent).toEqual('Submit');
